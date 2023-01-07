@@ -388,12 +388,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 519420031}
   target: {fileID: 619383063}
-  focusAreaSize: {x: 6, y: 4}
+  focusAreaSize: {x: 6, y: 2}
   verticalOffset: 0
   RoomSize: {x: 32, y: 18}
   lookAheadDistX: 3
   smoothTimeX: 0.5
-  VerticalSmoothTime: 0.5
+  VerticalSmoothTime: 0.1
   roomcenter: {x: 384, y: 252}
 --- !u!82 &519420034
 AudioSource:
@@ -675,7 +675,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 619383059}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 384.01, y: 254.78, z: 0}
+  m_LocalPosition: {x: 383.5, y: 255.7, z: 0}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
