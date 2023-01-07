@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PlayerProjectile
+  - EnemyProjectile
+  - BreakableBlock
   layers:
   - Default
   - TransparentFX
@@ -13,9 +16,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Ground
+  - ThinWall
+  - Enemies
   - 
   - 
   - 
@@ -40,4 +43,25 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: FarBG
+    uniqueID: 308164373
+    locked: 0
+  - name: Particles
+    uniqueID: 1286985435
+    locked: 0
+  - name: NearBG
+    uniqueID: 2255014063
+    locked: 0
+  - name: Player
+    uniqueID: 3311831089
+    locked: 0
+  - name: NearFG
+    uniqueID: 404440675
+    locked: 0
+  - name: Ground
+    uniqueID: 1871837415
+    locked: 0
+  - name: FarFG
+    uniqueID: 1942579535
     locked: 0

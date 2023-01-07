@@ -1,0 +1,33 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class NormalShooter : MonoBehaviour {
+
+	float direction = 1f;
+	public GameObject bullet;
+	public BulletBehaviour[] bullets = new BulletBehaviour[15];
+	int currentBullet;
+
+	void Awake() {
+		currentBullet = 0;
+		for(int i = 0; i < 15; i++) {
+			bullets[i] = Instantiate(bullet, Vector3.zero, transform.rotation).GetComponent<BulletBehaviour>();
+		}
+	}
+
+	void Update() {
+		if (Input.GetAxisRaw("Horizontal") > 0f)
+			direction = 1f;
+		else if (Input.GetAxisRaw("Horizontal") < 0f)
+			direction = -1f;
+			if (Input.GetKeyDown(KeyCode.X)) {
+			Debug.Log("x button pressed for bullet id " + currentBullet);
+			bullets[currentBullet].gameObject.SetActive(true);
+			bullets[currentBullet].transform.position = transform.position;
+			bullets[currentBullet].Shoot(direction);
+			currentBullet++;
+			if (currentBullet >= 15) currentBullet = 0;
+		}
+	}
+}
