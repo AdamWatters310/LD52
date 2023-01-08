@@ -40,6 +40,7 @@ public class GameEvents : MonoBehaviour {
 	public event Action OnRoomChange;
 
 	public event Action OnDialogueTrigger;
+	public event Action OnDialogueEnd;
 
 	public event Action OnHealthUpdated;
 	public event Action OnHealthIncrease;
@@ -141,6 +142,10 @@ public class GameEvents : MonoBehaviour {
 		OnDialogueTrigger?.Invoke();
 	}
 
+	public void EndDialogue() {
+		OnDialogueEnd?.Invoke();
+	}
+
 	public void GetMoreSoul() {
 		OnGetMoreSoul?.Invoke();	
 	}
@@ -159,5 +164,29 @@ public class GameEvents : MonoBehaviour {
 
 	public void DecreaseHealth() {
 		OnHealthDecrease?.Invoke();
+	}
+
+	public void IncreaseHealth() {
+		OnHealthIncrease?.Invoke();
+	}
+
+	public void DecreaseHealthBig() {
+		OnHealthBigDecrease?.Invoke();
+	}
+
+	public void IncreaseMaxHealth() {
+		OnHealthUpdated?.Invoke();
+	}
+
+	public void RefillHealth() {
+		OnRefillHealth?.Invoke();
+	}
+
+	public void Pause() {
+		OnPause?.Invoke();
+	}
+
+	public void UnPause() {
+		OnUnpause?.Invoke();
 	}
 }

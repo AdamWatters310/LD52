@@ -9,6 +9,7 @@ public class GlobalVars : MonoBehaviour {
 	public string currentRoomName = "Room Name";
 	public Vector2 currentRoomSize;
 	public Vector2 currentRoomPosition;
+	public string currentDialogue;
 
 	void Awake() {
 		current = this;

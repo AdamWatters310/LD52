@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GhostManager : MonoBehaviour {
 	
 	int ghostsInUse = 0;
-	int maxGhostsAllowed = 1;
+	int maxGhostsAllowed = 2;
 
 	public bool hasDash, hasShoot, hasDJ, hasHJ, hasWallWalk;
 	public bool dashEnabled, shootEnabled, DJEnabled, HJEnabled, WallWalkEnabled;

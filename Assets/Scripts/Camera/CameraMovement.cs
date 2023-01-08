@@ -118,13 +118,7 @@ public class CameraMovement : MonoBehaviour {
 		roomcenter = var.currentRoomPosition;
 	}
 
-	/*	private void OnDrawGizmos() {
-			Gizmos.color = new Color(0, 255, 255);
-			for(int i = 0; i < 10; i++) {
-				for(int j = 0; j > -9; j--) {
-					Gizmos.DrawWireCube(new Vector3(i * 32f + 16f, j * 18f + 9f, 1f), new Vector3(32f, 18f, 2f));
-				}
-			}
+		private void OnDrawGizmos() {
 			Gizmos.color = new Color(1, 0, 0, .5f);
 			Gizmos.DrawCube(focus.center, focusAreaSize);
 
@@ -132,5 +126,5 @@ public class CameraMovement : MonoBehaviour {
 			Gizmos.DrawWireSphere(roomcenter, 1f);
 
 		}
-	*/
+	
 }

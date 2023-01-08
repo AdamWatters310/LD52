@@ -121,6 +121,7 @@ public class Player : MonoBehaviour {
 			}
 			if (jumping && controller.collisions.above) {
 				jumping = false;
+				storedJump = false;
 			}
 			movement.x = HorizontalInput * Time.deltaTime * moveSpeed;
 			if (!jumping) {
@@ -150,8 +151,9 @@ public class Player : MonoBehaviour {
 		while(isDashing) {
 			elapsedTime += Time.deltaTime;
 			moveDistance = dashLength * (Time.deltaTime / dashTime);
+
 			controller.Move(moveDistance * direction);
-			if (elapsedTime >= dashTime)
+			if (elapsedTime >= dashTime || controller.collisions.below || controller.collisions.right || controller.collisions.left || controller.collisions.left)
 				break;
 			else
 				yield return null;

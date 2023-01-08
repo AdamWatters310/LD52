@@ -8,6 +8,9 @@ public class CommonEnemyBehaviour : MonoBehaviour {
 		if (collision.CompareTag("PlayerProjectile")) {
 			health -= 1f;
 		}
+		else if (collision.CompareTag("Player")) {
+			GameEvents.current.DecreaseHealth();
+		}
 	}
 
 	private void Update() {

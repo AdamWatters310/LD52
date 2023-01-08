@@ -7,6 +7,8 @@ public class RoomInit : MonoBehaviour {
 	public Vector2 roomSize;
 	private Vector2 roomPosition;
 	public string roomName;
+	public GameObject roomPrefab;
+	GameObject InstantiatedParentObject;
 
 	private void Start() {
 		roomPosition = transform.position;
@@ -19,6 +21,14 @@ public class RoomInit : MonoBehaviour {
 			GlobalVars.current.currentRoomName = roomName;
 			GameEvents.current.RoomChange();
 			GameEvents.current.RoomNameChange();
+			if (roomPrefab != null)
+				InstantiatedParentObject = Instantiate(roomPrefab);
+		}
+	}
+
+	private void OnTriggerExit2D(Collider2D collision) {
+		if(collision.CompareTag("Player") && InstantiatedParentObject != null) {
+			Destroy(InstantiatedParentObject);
 		}
 	}
 

@@ -41,7 +41,7 @@ PlayerSettings:
     height: 1
   m_SplashScreenLogos:
   - logo: {fileID: 21300000, guid: 7ea6497cf02f0f446b29c4982a3f2ac9, type: 3}
-    duration: 2
+    duration: 3
   - logo: {fileID: 21300000, guid: 5fdfaaf8c58b418478ae76279dc193f7, type: 3}
     duration: 2
   m_VirtualRealitySplashScreen: {fileID: 0}
@@ -272,7 +272,14 @@ PlayerSettings:
   AndroidMinifyDebug: 0
   AndroidValidateAppBundleSize: 1
   AndroidAppBundleSizeToValidate: 150
-  m_BuildTargetIcons: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: ad4305027b0afda47916db2f61f1d11d, type: 3}
+      m_Width: 128
+      m_Height: 128
+      m_Kind: 0
   m_BuildTargetPlatformIcons: []
   m_BuildTargetBatching: []
   m_BuildTargetShaderSettings: []

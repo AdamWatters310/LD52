@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 6645176972858218955}
   - component: {fileID: 6645176972858218954}
   - component: {fileID: 6645176972858218953}
+  - component: {fileID: 5265226695969355992}
   m_Layer: 8
   m_Name: Gravestone
   m_TagString: Untagged
@@ -330,3 +331,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &5265226695969355992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6645176972858218951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e785ab4b9289458448308422436353dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: 'You harvested a soul and got it''s abilities.
+
+
+    Enable/Disable the dash
+    with 1, and use it with C when enabled.
+
+
+    Using a soul''s ability wears down
+    the soul gauge.
+
+    Press A to close.'

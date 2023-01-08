@@ -511,7 +511,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 416, y: 252, z: -10}
+  m_LocalPosition: {x: 384, y: 252, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -713,6 +713,7 @@ MonoBehaviour:
   currentRoomName: Room Name
   currentRoomSize: {x: 0, y: 0}
   currentRoomPosition: {x: 0, y: 0}
+  currentDialogue: 
 --- !u!114 &527381600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -821,7 +822,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 619383059}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 382.1, y: 255.5, z: 0}
+  m_LocalPosition: {x: 384, y: 259.7, z: 0}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1301,6 +1302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1700ee6097fd06b4bbb88ef4504be3be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundEffect: {fileID: 619383066}
   bullet: {fileID: 6773228198386521367, guid: c7ffb06f06b5866499f3aea583ae21e1, type: 3}
   bullets:
   - {fileID: 0}
