@@ -8,7 +8,7 @@ public class Startup : MonoBehaviour {
 #if UNITY_EDITOR
 		Debug.Log("Ignoring usual startup routine");
 	#else
-		SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
+		SceneManager.LoadSceneAsync(2, LoadSceneMode.Additive);
 	#endif
 	}
 }

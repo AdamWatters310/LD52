@@ -9,9 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: e38b1c3048ca3e940a92b384c51aadc2
+  - enabled: 1
     path: Assets/Scenes/GlobalStorage.unity
     guid: 54338d97b8fdc844ab6c52fd285c4692
   - enabled: 1
     path: Assets/Scenes/Map.unity
     guid: 20348a16223755841ad05e9db5cb5fff
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: f85f7b9ace388474ebd7d599674c280a
   m_configObjects: {}
